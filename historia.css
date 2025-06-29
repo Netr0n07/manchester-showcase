@@ -1,0 +1,60 @@
+body {
+    background-color: #808080; /* Ustawienie tła strony na szary odcień */
+    color: white; /* Ustawienie koloru tekstu na biały */
+    font-family: Arial, sans-serif; /* Wybór rodziny czcionek */
+    margin: 0; /* Wyzerowanie marginesów */
+    padding: 0; /* Wyzerowanie wcięć */
+}
+
+header {
+    text-align: center; /* Wyśrodkowanie tekstu w nagłówku */
+    padding: 20px 0; /* Dodanie wewnętrznego wcięcia do nagłówka */
+    background-color: #000080; /* Ustawienie tła nagłówka na granatowy */
+}
+
+h1 {
+    margin: 0; /* Wyzerowanie marginesu dla nagłówka pierwszego poziomu */
+}
+
+main {
+    padding: 20px; /* Dodanie wewnętrznego wcięcia do głównego obszaru treści */
+}
+
+.gallery {
+    display: flex; /* Ustawienie kontenera galerii jako elastycznego pojemnika */
+    flex-wrap: wrap; /* Zawijanie elementów galerii na kolejne linie */
+    gap: 20px; /* Odległość między elementami w galerii */
+    justify-content: center; /* Wyśrodkowanie elementów galerii */
+    margin-top: 20px; /* Dodanie marginesu na górze galerii */
+}
+
+.photo {
+    border: 2px solid #fff; /* Dodanie obramowania dla zdjęć */
+    border-radius: 10px; /* Zaokrąglenie rogów zdjęć */
+    overflow: hidden; /* Ukrycie treści, która wychodzi poza ramy zdjęcia */
+    width: 300px; /* Ustawienie szerokości zdjęcia */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Dodanie cienia do zdjęć */
+    transition: transform 0.3s; /* Dodanie płynnego efektu transformacji */
+}
+
+.photo:hover {
+    transform: scale(1.05); /* Powiększenie zdjęcia przy najechaniu myszką */
+}
+
+.photo img {
+    width: 100%; /* Ustawienie szerokości obrazu na 100% */
+    height: auto; /* Zachowanie proporcji wysokości obrazu */
+    display: block; /* Ustawienie obrazu jako elementu blokowego */
+}
+
+.description {
+    padding: 10px; /* Dodanie wewnętrznego wcięcia dla opisu zdjęcia */
+    text-align: center; /* Wyśrodkowanie tekstu w opisie zdjęcia */
+    background-color: rgba(0, 0, 0, 0.6); /* Ustawienie koloru tła opisu zdjęcia */
+}
+
+footer {
+    text-align: center; /* Wyśrodkowanie tekstu w stopce */
+    padding: 10px 0; /* Dodanie wewnętrznego wcięcia do stopki */
+    background-color: #000080; /* Ustawienie tła stopki na granatowy */
+}

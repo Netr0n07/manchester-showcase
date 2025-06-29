@@ -1,0 +1,67 @@
+body {
+    background-color: #808080; /* Ustawienie tła strony na szary odcień */
+    color: white; /* Kolor tekstu na biały */
+    font-family: Arial, sans-serif; /* Wybór czcionki */
+    margin: 0; /* Usunięcie marginesów */
+    padding: 0; /* Usunięcie wewnętrznego wypełnienia */
+}
+
+header {
+    text-align: center; /* Wyśrodkowanie tekstu w nagłówku */
+    padding: 20px 0; /* Dodanie wewnętrznego wypełnienia góra i dół */
+    background-color: #000080; /* Tło nagłówka na granatowy */
+}
+
+h1 {
+    margin: 0; /* Usunięcie marginesu dla nagłówka h1 */
+}
+
+main {
+    padding: 20px; /* Dodanie wewnętrznego wypełnienia dla elementu głównego */
+}
+
+.intro {
+    background-color: rgba(255, 255, 255, 0.2); /* Ustawienie przezroczystego szarego tła dla wprowadzenia */
+    padding: 20px; /* Dodanie wewnętrznego wypełnienia */
+    border-radius: 10px; /* Zaokrąglenie rogów */
+    margin-bottom: 20px; /* Dodanie marginesu dolnego */
+}
+
+.gallery {
+    display: flex; /* Ustawienie galerii jako flexbox */
+    flex-wrap: wrap; /* Owinięcie elementów w linii, gdy przekraczają szerokość kontenera */
+    gap: 20px; /* Dodanie odstępu między elementami galerii */
+    justify-content: center; /* Wyśrodkowanie zawartości w poziomie */
+    margin-top: 20px; /* Dodanie marginesu górnego */
+}
+
+.photo {
+    border: 2px solid #fff; /* Dodanie obramowania do zdjęcia */
+    border-radius: 10px; /* Zaokrąglenie rogów */
+    overflow: hidden; /* Ukrycie elementów, które wychodzą poza kontener */
+    width: 300px; /* Szerokość zdjęcia */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Dodanie cienia */
+    transition: transform 0.3s; /* Dodanie płynnego efektu przejścia */
+}
+
+.photo:hover {
+    transform: scale(1.05); /* Powiększenie zdjęcia przy najechaniu myszą */
+}
+
+.photo img {
+    width: 100%; /* Ustawienie szerokości obrazu na 100% */
+    height: auto; /* Automatyczne dostosowanie wysokości */
+    display: block; /* Wyśrodkowanie obrazu */
+}
+
+.description {
+    padding: 10px; /* Dodanie wewnętrznego wypełnienia */
+    text-align: center; /* Wyśrodkowanie tekstu */
+    background-color: rgba(0, 0, 0, 0.6); /* Ustawienie przezroczystego tła dla opisu */
+}
+
+footer {
+    text-align: center; /* Wyśrodkowanie tekstu w stopce */
+    padding: 10px 0; /* Dodanie wewnętrznego wypełnienia góra i dół */
+    background-color: #000080; /* Tło stopki na granatowy */
+}

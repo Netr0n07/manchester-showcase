@@ -1,0 +1,88 @@
+<!DOCTYPE html><!-- Deklaracja typu dokumentu -->
+<html lang="pl"> <!-- Oznaczenie języka strony jako polski -->
+<head>
+    <meta charset="UTF-8"> <!-- Deklaracja kodowania znaków jako UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Konfiguracja viewportu -->
+    <title>Manchester moimi oczami</title> <!-- Tytuł strony -->
+    <link rel="stylesheet" href="styles.css"> <!-- Import pliku CSS -->
+</head>
+<body>
+    <header>
+        <h1>Manchester moimi oczami</h1><!-- Nagłówek strony -->
+    </header>
+    <main>
+        <div class="slideshow-container">
+            <!-- Kontener dla slideshow -->
+            <div class="mySlides fade">
+                <img src="https://travellemming.com/wp-content/uploads/The-Kimpton-Clocktower-Hotel-1024x768.jpg" style="width:100%">
+                <div class="text">The Kimpton Clocktower Hotel</div> <!-- Opis pierwszego slajdu -->
+            </div>
+            <div class="mySlides fade">
+                <img src="https://travellemming.com/wp-content/uploads/Thomas-Street-1024x767.jpg" style="width:100%">
+                <div class="text">Thomas Street</div>
+            </div>
+            <div class="mySlides fade">
+                <img src="https://travellemming.com/wp-content/uploads/Central-Retail-District-1024x767.jpg" style="width:100%">
+                <div class="text">Shambles Square</div>
+            </div>
+            <div class="mySlides fade">
+                <img src="https://travellemming.com/wp-content/uploads/Manchester-Central-Library-1024x767.jpg" style="width:100%">
+                <div class="text">Manchester Central Library</div>
+            </div>
+            <div class="mySlides fade">
+                <img src="https://travellemming.com/wp-content/uploads/Deansgate-and-Spinningfields-1024x768.jpg" style="width:100%">
+                <div class="text">Deansgate connects the north of Manchester city centre to the south</div>
+            </div>
+            <div class="mySlides fade">
+                <img src="https://travellemming.com/wp-content/uploads/Canals-of-Castlefield-1024x768.jpg" style="width:100%">
+                <div class="text">Old meets new by the tranquil canals of Castlefield</div>
+            </div>
+            <div class="mySlides fade">
+                <img src="https://travellemming.com/wp-content/uploads/Imperial-War-Museum-North-1024x767.jpg" style="width:100%">
+                <div class="text">The quayside Imperial War Museum North</div>
+            </div>
+
+            <!-- Przycisk poprzedni -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <!-- Przycisk następny -->
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+
+        <!-- Kropki nawigacyjne -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+            <span class="dot" onclick="currentSlide(7)"></span>
+        </div>
+
+        <div class="table-buttons">
+            <!-- Przycisk "Historia miasta" -->
+            <div class="table-button yellow" onclick="location.href='historia.html'">Historia miasta</div>
+            <!-- Przycisk "Ostatnie wydarzenia" -->
+            <div class="table-button purple" onclick="location.href='wydarzenie.html'">Ostatnie wydarzenia</div>
+            <!-- Przycisk "Opis miasta" -->
+            <div class="table-button green" onclick="location.href='opis.html'">Opis miasta</div>
+        </div>
+        <div class="sources">
+            <h2>Źródła</h2> <!-- Nagłówek sekcji -->
+             <!-- Linki do źródeł -->
+            <p><a href="https://www.flickr.com/photos/196413224@N07/albums/">Galeria zdjęć z wydarzenia</a></p>
+            <p><a href="https://travellemming.com/where-to-stay-in-manchester/?utm_source=google&utm_medium=cpc&utm_campaign=21117606439&utm_content=160196028659&utm_term=best%20places%20to%20stay%20in%20manchester&gad_source=1&gclid=Cj0KCQjwpZWzBhC0ARIsACvjWROnjdDTeg9TG4d2XGdpkK8XD1RdUGV4zP-8mqx1ets5mmPCrR617rsaApB8EALw_wcB">Najlepsze miejsca do zwiedzania</a></p>
+            <p><a href="https://www.stenaline.pl/do-wielkiej-brytanii/manchester">Opis miasta Manchester</a></p>
+            <p><a href="https://manchestercity.pl/miasto-manchester/">Historia miasta Manchester</a></p>
+            <p><a href="https://pl.wikipedia.org/wiki/Manchester">Wikipedia</a></p>
+            <p><a href="https://wakacyjnapolisa.pl/poradnik/manchester-co-zwiedzic-najlepsze-atrakcje/">Inne pliki graficzne oraz informacje</a></p>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Wiktor Wypyszyński</p><!-- Stopka strony -->
+    </footer>
+    <script src="script.js"></script><!-- Import pliku JavaScript -->
+</body>
+</body>
+</html>

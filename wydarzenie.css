@@ -1,0 +1,67 @@
+body {
+    background-color: #808080; /* Ustawienie szarego odcienia tła */
+    color: white; /* Ustawienie koloru tekstu na biały */
+    font-family: Arial, sans-serif; /* Ustawienie czcionki na Arial lub czcionkę bezszeryfową */
+    margin: 0; /* Wyzerowanie marginesów */
+    padding: 0; /* Wyzerowanie wewnętrznego odstępu */
+}
+
+header {
+    text-align: center; /* Wyśrodkowanie tekstu w nagłówku */
+    padding: 20px 0; /* Dodanie wewnętrznego odstępu do nagłówka */
+    background-color: #000080; /* Ustawienie granatowego koloru tła */
+}
+
+h1 {
+    margin: 0; /* Wyzerowanie marginesu dla nagłówka pierwszego poziomu */
+}
+
+main {
+    padding: 20px; /* Dodanie wewnętrznego odstępu do elementu głównego */
+}
+
+.intro {
+    background-color: rgba(255, 255, 255, 0.2); /* Ustawienie przezroczystego szarego tła dla sekcji intro */
+    padding: 20px; /* Dodanie wewnętrznego odstępu do sekcji intro */
+    border-radius: 10px; /* Zaokrąglenie rogów */
+    margin-bottom: 20px; /* Dodanie odstępu od dołu dla sekcji intro */
+}
+
+.gallery {
+    display: flex; /* Ustawienie elementów galerii w układzie flexbox */
+    flex-wrap: wrap; /* Zawijanie elementów galerii, gdy brakuje miejsca */
+    gap: 20px; /* Dodanie odstępu między elementami galerii */
+    justify-content: center; /* Wyśrodkowanie elementów galerii */
+    margin-top: 20px; /* Dodanie odstępu od góry dla galerii */
+}
+
+.photo {
+    border: 2px solid #fff; /* Ustawienie białej obwódki dla zdjęć */
+    border-radius: 10px; /* Zaokrąglenie rogów zdjęć */
+    overflow: hidden; /* Ukrycie zawartości, która wychodzi poza granice zdjęcia */
+    width: 300px; /* Ustawienie szerokości zdjęć */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Dodanie cienia do zdjęć */
+    transition: transform 0.3s; /* Dodanie płynnego przejścia dla transformacji zdjęć */
+}
+
+.photo:hover {
+    transform: scale(1.05); /* Powiększenie zdjęć przy najechaniu kursorem */
+}
+
+.photo img {
+    width: 100%; /* Ustawienie szerokości zdjęć na 100% */
+    height: auto; /* Automatyczne dopasowanie wysokości zdjęć */
+    display: block; /* Ustawienie zdjęć jako blokowe */
+}
+
+.description {
+    padding: 10px; /* Dodanie wewnętrznego odstępu do opisów zdjęć */
+    text-align: center; /* Wyśrodkowanie tekstu opisów zdjęć */
+    background-color: rgba(0, 0, 0, 0.6); /* Ustawienie przezroczystego czarnego tła dla opisów zdjęć */
+}
+
+footer {
+    text-align: center; /* Wyśrodkowanie tekstu w stopce */
+    padding: 10px 0; /* Dodanie wewnętrznego odstępu dla stopki */
+    background-color: #000080; /* Ustawienie granatowego koloru tła dla stopki */
+}

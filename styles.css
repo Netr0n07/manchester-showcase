@@ -1,0 +1,151 @@
+body {
+    background-color: #000080; /* Granatowy */
+    color: white; /* Kolor tekstu biały */
+    font-family: Arial, sans-serif; /* Wybór rodziny czcionek */
+    margin: 0; /* Reset marginesów */
+    padding: 0; /* Reset wcięć */
+}
+
+header {
+    text-align: center; /* Wyśrodkowanie tekstu */
+    padding: 20px 0; /* Ustawienie wewnętrznego marginesu */
+    background-color: #000080; /* Granatowy */
+}
+
+h1 {
+    margin: 0; /* Reset marginesu dla nagłówka */
+}
+
+main {
+    padding: 20px; /* Dodanie wewnętrznego marginesu */
+}
+
+.slideshow-container {
+    position: relative; /* Ustawienie pozycji */
+    max-width: 1000px; /* Maksymalna szerokość kontenera */
+    margin: auto; /* Wyśrodkowanie kontenera */
+}
+
+.mySlides {
+    display: none; /* Ukrycie slajdów */
+}
+
+img {
+    vertical-align: middle; /* Wyrównanie pionowe obrazów */
+}
+
+/* Efekty fade */
+.fade {
+    animation-name: fade; /* Ustawienie nazwy animacji */
+    animation-duration: 1.5s; /* Czas trwania animacji */
+}
+
+@keyframes fade {
+    from {opacity: .4}  /* Początkowa przezroczystość */
+    to {opacity: 1} /* Końcowa przezroczystość */
+}
+
+/* Przycisk poprzedni/następny */
+.prev, .next {
+    cursor: pointer; /* Zmiana kursora na wskaźnik */
+    position: absolute; /* Ustawienie pozycji */
+    top: 50%; /* Wyśrodkowanie w pionie */
+    width: auto; /* Automatyczna szerokość */
+    padding: 16px; /* Wewnętrzny margines */
+    margin-top: -22px; /* Ustawienie odstępu od góry */
+    color: white; /* Kolor tekstu biały */
+    font-weight: bold; /* Pogrubienie tekstu */
+    font-size: 18px; /* Rozmiar czcionki */
+    transition: 0.6s ease; /* Animacja */
+    border-radius: 0 3px 3px 0; /* Zaokrąglenie narożników */
+    user-select: none; /* Uniemożliwienie zaznaczania */
+}
+
+.next {
+    right: 0; /* Ustawienie przycisku "Następny" na prawo */
+    border-radius: 3px 0 0 3px; /* Zaokrąglenie narożników */
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8); /* Przejście na ciemniejszy kolor po najechaniu myszą */
+}
+
+/* Kropki nawigacyjne */
+.dot {
+    cursor: pointer; /* Zmiana kursora na wskaźnik */
+    height: 15px; /* Wysokość kropki */
+    width: 15px; /* Szerokość kropki */
+    margin: 0 2px; /* Margines kropek */
+    background-color: #bbb; /* Kolor tła */
+    border-radius: 50%; /* Zaokrąglenie narożników */
+    display: inline-block; /* Blokowa wstawka */
+    transition: background-color 0.6s ease; /* Animacja */
+}
+
+.active, .dot:hover {
+    background-color: #717171; /* Aktywny kolor kropki */
+}
+
+/* Opisy zdjęć */
+.text {
+    color: #f2f2f2; /* Kolor tekstu biały */
+    font-size: 15px; /* Rozmiar czcionki */
+    padding: 8px 12px; /* Wewnętrzny margines */
+    position: absolute; /* Ustawienie pozycji */
+    bottom: 8px; /* Odległość od dołu */
+    width: 100%; /* Szerokość */
+    text-align: center; /* Wyśrodkowanie tekstu */
+    background-color: rgba(0, 0, 0, 0.5); /* Kolor tła z przezroczystością */
+}
+
+.table-buttons {
+    display: flex; /* Wyświetlanie elementów jako flexbox */
+    justify-content: center; /* Wyśrodkowanie elementów */
+    gap: 20px; /* Odstęp między elementami */
+    margin: 20px 0; /* Margines górny i dolny */
+}
+
+.table-button {
+    border: 2px solid #fff; /* Obramowanie przycisku */
+    border-radius: 5px; /* Zaokrąglenie narożników */
+    padding: 20px; /* Wewnętrzny margines */
+    cursor: pointer; /* Zmiana kursora na wskaźnik */
+    text-align: center; /* Wyśrodkowanie tekstu */
+    width: 200px; /* Szerokość przycisku */
+    transition: transform 0.3s; /* Animacja */
+    color: black; /* Kolor tekstu czarny */
+}
+
+.table-button:hover {
+    transform: scale(1.05); /* Powiększenie przycisku po najechaniu myszą */
+}
+
+.table-button.yellow {
+    background-color: #FFD700; /* Żółty */
+    border-color: #FFD700; /* Obramowanie żółte */
+}
+
+.table-button.purple {
+    background-color: #800080; /* Fiolet */
+    border-color: #800080; /* Obramowanie fioletowe */
+}
+
+.table-button.green {
+    background-color: #008000; /* Zielony */
+    border-color: #008000; /* Obramowanie zielone */
+}
+
+.gallery {
+    display: flex; /* Wyświetlanie elementów jako flexbox */
+    flex-wrap: wrap; /* Zawijanie elementów w rzędzie */
+    gap: 20px; /* Odstęp między elementami */
+    justify-content: center; /* Wyśrodkowanie elementów */
+    margin-top: 20px; /* Margines górny */
+}
+
+.photo {
+  border: 2px solid #fff; /* Obramowanie zdjęcia */
+  border-radius: 10px; /* Zaokrąglenie narożników */
+  overflow: hidden; /* Ukrywanie przekraczających zawartości */
+  width: 300px; /* Szerokość */
+}
